@@ -3,25 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <script>
-     let date = new Date(); 
-     let hour = date.getHours(); 
 
-     function hello(hour) {
-        let result;
-        if (hello <= 5){
-        result = 'Доброй ночи'
+        function sayGreetings (hour) {
+        let say;
+        if (0 < hour && hour < 5){
+        say = 'Доброй ночи';
         }
-
+    
+        else if (5 <= hour && hour < 11){
+        say = 'Доброе утро';
+        }
+    
+        else if (11 <= hour && hour < 17){
+        say = 'Добрый день';
+        }
+    
+        else if (17 <= hour && hour < 22){
+        say = 'Добрый вечер';
+        }
+    
         else {
-        result = 'NOT positive';
+        say = 'Доброй ночи';
         }
-        return result;
+    
+        return say;
      }
+     
+    console.log (sayGreetings(21));
+
 
     </script>
 </body>
