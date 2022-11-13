@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>       
+
+        let product1 = {
+        name: 'T-shirt',
+        brand: 'adidas',
+        price: 100
+    };
+
+    product1. show = function(){
+        let a = this.name + ' - ' + this.price
+        return (a)
+    };
+
+    console.log(product1.show ()) 
+
+    let product2 = {
+        name: 'jeans',
+        brand: 'levis',
+        price: 150
+    };
+
+
+    function showProduct (x) {
+        let a = x.name + ' - ' + x.price
+        return (a)
+    }
+
+    product2. show = showProduct (product2)
+
+    console.log (showProduct(product2))
+
+    </script>
+</body>
+</html>
