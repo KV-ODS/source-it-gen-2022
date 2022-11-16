@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function drawItems (name1, quan1, name2, quan2, rows, itemsInRow)
+        {
+            let id = 0;
+            let count = rows * itemsInRow;
+            let result = '';
+            let numInRow = 0;
+
+            while (id < count ) {
+
+            for (let i = 0; i < quan1; i++){
+                if (id < count){
+                result += name1;
+                id++;
+                setWhitespace();
+                }
+            }
+
+            for (let i = 0; i < quan2; i++){
+                if (id < count){
+                result += name2;
+                id++;
+                setWhitespace();
+                }
+            }
+
+        }
+        console.log (result)
+
+        function setWhitespace(){
+            numInRow++
+            if(numInRow === itemsInRow){
+                result += '\n'
+                numInRow = 0;
+            } else {
+                result += '\t'
+            }
+        }
+        }
+
+        drawItems('car', 4, 'bus', 3, 5, 8)
+    </script>
+</body>
+</html>
