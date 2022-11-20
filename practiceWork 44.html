@@ -12,11 +12,26 @@
     let y = [];
     x[77] = 7;
 
-    for (let i = 0; i < 10; i++) {
-        y[i] = Math.pow(x,2);
+    // for (let i = 0; i < x.length; i++) {
+    //     y[i] = Math.pow(x[i],2);
+        
+    // }
+    // console.log (y)
+
+    // for (let i in x) {
+    //     y.push(Math.pow(x[i], 2));
+        
+    // }
+    // console.log (y)
+
+    for (let i of x) {
+        if(i){
+            y.push(Math.pow(i, 2));
+        }
         
     }
     console.log (y)
+
 
     </script>
 </body>
