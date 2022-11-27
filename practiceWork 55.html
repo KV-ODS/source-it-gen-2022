@@ -7,21 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-<script>
+    <script>
+    let string = "Lennon, John\nMcCartney, Paul\nHarrison, George\nStar, Ringo"
 
-let fibsArr = [];
-fibsArr[0] = 1;
-fibsArr[1] = 1;
+    console.log (string.replace(/([\w]+), ([\w]+)/gm, '$2 $1') );
+        
 
-for (let i = 2; i < 25; i++) { 
 
-fibsArr[i] = fibsArr[fibsArr.length-1] + fibsArr[fibsArr.length-2];
 
-}
-
-console.log (fibsArr);
     
- 
-</script>
+    </script>
 </body>
 </html>
